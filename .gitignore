@@ -1,0 +1,11 @@
+# Fichiers de configuration sensibles et temporaires
+Config.php
+*.session
+
+# Dossier contenant les uploads clients (Ne doit pas être versionné)
+/uploads/
+
+# Fichiers spécifiques à l'environnement de développement (IDE, OS)
+.vscode/
+.DS_Store
+Thumbs.db
