@@ -149,7 +149,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <input type="number" step="0.01" min="1" class="form-control <?= isset($errors['prix']) ? 'is-invalid' : '' ?>" id="prix" name="prix" value="<?= htmlspecialchars($prix_propose) ?>" required>
                     <?php if (isset($errors['prix'])): ?><div class="invalid-feedback"><?= htmlspecialchars($errors['prix']) ?></div><?php endif; ?>
                 </div>
-                <small class="form-text text-muted">Ce prix inclut tous les frais de main d'œuvre et de transport.</small>
+                <small class="form-text text">Ce prix inclut tous les frais de main d'œuvre et de transport.</small>
             </div>
             
             <button type="submit" class="btn btn-warning btn-lg w-100 fw-bold">

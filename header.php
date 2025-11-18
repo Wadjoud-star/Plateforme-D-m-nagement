@@ -8,8 +8,7 @@ $pageTitle = $pageTitle ?? 'Mon Déménagement';
 // --- NOUVEAU : Définition du chemin Racine du Projet ---
 // Si votre projet est accessible via http://localhost/demenagement/
 $projectRoot = '/demenagement/'; 
-// Si votre projet est accessible via http://localhost/ (racine du serveur), utilisez $projectRoot = '/';
-// --------------------------------------------------------
+
 
 $isLoggedIn = isset($_SESSION['user_id']);
 $userRole = $_SESSION['user_role'] ?? null;
@@ -105,8 +104,8 @@ if ($isLoggedIn) {
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-center">
-        <li class="nav-item"><a class="nav-link" href="<?= $projectRoot ?>index.php">Accueil</a></li>
-        <li class="nav-item"><a class="nav-link" href="<?= $projectRoot ?>contact.php">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.php">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
         
         <?php if ($isLoggedIn): ?>
             
@@ -128,9 +127,9 @@ if ($isLoggedIn) {
             </li>
             
         <?php else: ?>
-            <li class="nav-item"><a class="nav-link" href="<?= $projectRoot ?>inscription.php">Inscription</a></li>
+            <li class="nav-item"><a class="nav-link" href="inscription.php">Inscription</a></li>
             <li class="nav-item">
-                <a class="btn btn-warning ms-2" href="<?= $projectRoot ?>connexion.php">
+                <a class="btn btn-warning ms-2" href="connexion.php">
                     <i class="bi bi-lock-fill me-1"></i> Se connecter
                 </a>
             </li>

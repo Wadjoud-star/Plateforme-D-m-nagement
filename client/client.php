@@ -126,7 +126,7 @@ $clientNom = htmlspecialchars($_SESSION['user_nom']);
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
-            <a href="propositions.php" class="text-decoration-none">
+            <a href="proposition.php" class="text-decoration-none">
                 <div class="card p-4 h-100 shadow-sm border-0 card-hover bg-light">
                     <i class="bi bi-tag-fill display-4 text-warning mb-3"></i>
                     <h5 class="card-title fw-bold text-dark">Propositions Reçues</h5>

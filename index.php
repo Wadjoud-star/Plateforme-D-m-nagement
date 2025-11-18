@@ -3,12 +3,12 @@
 $pageTitle = 'Accueil - Plateforme Déménagement';
 
 // On inclut le header (qui gère la session, le début du HTML et le menu)
-include 'header.php'; 
-require_once 'Config.php';
+include 'demenagement/header.php'; 
+require_once 'demenagement/Config.php';
 
 // Les variables $isLoggedIn et $dashboardLink sont maintenant disponibles grâce à header.php
 
-// Récupérer les 6 dernières annonces avec leur client
+// Récupérer les 3 dernières annonces avec leur client
 try {
     $stmt = $pdo->prepare("
         SELECT a.id, a.titre, a.description, a.ville_depart, a.ville_arrivee, a.date_depot, u.nom AS client_nom
@@ -29,7 +29,7 @@ try {
 <section class="hero-banner position-relative mb-5" style="
     height: 70vh; 
     /* IMPORTANT : Ce chemin suppose que l'image est dans /demenagement/assets/hero_background.jpg */
-    background-image: url('assets/hero_background.jpg'); 
+    background-image: url('demenagement/assets/hero_background.jpg'); 
     background-position: center; /* Ajusté pour centrer l'image */
 ">
   <div class="hero-banner-overlay"></div>
@@ -115,7 +115,8 @@ try {
               <div class="mt-auto pt-2 border-top">
                 <p class="mb-1"><small>Départ : **<?= htmlspecialchars($annonce['ville_depart']) ?>**</small></p>
                 <p class="mb-1"><small>Arrivée : **<?= htmlspecialchars($annonce['ville_arrivee']) ?>**</small></p>
-                <a href="connexion.php" class="btn btn-sm btn-outline-secondary mt-2">Voir et Proposer</a>
+                
+                <a href="demenagement/annonces-public.php?id=<?= $annonce['id'] ?>" class="btn btn-sm btn-outline-secondary mt-2">Voir et Proposer</a>
               </div>
             </div>
           </div>
@@ -159,5 +160,5 @@ try {
 
 <?php
 // On inclut le footer
-include 'footer.php';
+include 'demenagement/footer.php';
 ?>

@@ -142,7 +142,9 @@ try {
                             <?php else: ?>
                                 <span class="badge bg-light text-dark border p-2 me-2">0 offre reçue</span>
                             <?php endif; ?>
-
+                                <a href="modifier-annonce.php?id=<?= $annonce['id'] ?>" class="btn btn-sm btn-outline-info mt-1">
+                                    <i class="bi"></i> Voir Détail
+                                </a>
                             <?php if ($annonce['statut_annonce'] !== 'Attribuée'): ?>
                                 <a href="modifier-annonce.php?id=<?= $annonce['id'] ?>" class="btn btn-sm btn-outline-info mt-1">
                                     <i class="bi bi-pencil-fill"></i> Modifier

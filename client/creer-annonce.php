@@ -122,6 +122,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 <div class="container py-5">
+    <a href="client.php" class="btn btn-outline-secondary btn-sm mb-4"><i class="bi bi-arrow-left me-2"></i> Retour au Tableau de Bord</a>
     <div class="row justify-content-center">
         <div class="col-lg-10">
             <h1 class="mb-4 display-6 fw-bold text-primary"><i class="bi bi-pencil-square me-2"></i> Publier votre annonce</h1>
