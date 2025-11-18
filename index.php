@@ -3,8 +3,8 @@
 $pageTitle = 'Accueil - Plateforme Déménagement';
 
 // On inclut le header (qui gère la session, le début du HTML et le menu)
-include 'demenagement/header.php'; 
-require_once 'demenagement/Config.php';
+include 'header.php'; 
+require_once 'Config.php';
 
 // Les variables $isLoggedIn et $dashboardLink sont maintenant disponibles grâce à header.php
 
@@ -29,7 +29,7 @@ try {
 <section class="hero-banner position-relative mb-5" style="
     height: 70vh; 
     /* IMPORTANT : Ce chemin suppose que l'image est dans /demenagement/assets/hero_background.jpg */
-    background-image: url('demenagement/assets/hero_background.jpg'); 
+    background-image: url('assets/hero_background.jpg'); 
     background-position: center; /* Ajusté pour centrer l'image */
 ">
   <div class="hero-banner-overlay"></div>
@@ -160,5 +160,5 @@ try {
 
 <?php
 // On inclut le footer
-include 'demenagement/footer.php';
+include 'footer.php';
 ?>

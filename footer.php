@@ -16,21 +16,21 @@
                 <h5 class="fw-bold">Navigation</h5>
                 <ul class="list-unstyled">
                    
-                    <li><a href="/demenagement/a-propos.php" class="text text-decoration-none small">À propos de nous</a></li>
+                    <li><a href="a-propos.php" class="text text-decoration-none small">À propos de nous</a></li>
                 </ul>
             </div>
             
             <div class="col-md-3 mb-4">
                 <h5 class="fw-bold">Espace</h5>
                 <ul class="list-unstyled">
-                      <li><a href="/demenagement/cgu.php" class="text text-decoration-none small">CGU (Conditions Générales d'Utilisation)</a></li> 
+                      <li><a href="cgu.php" class="text text-decoration-none small">CGU (Conditions Générales d'Utilisation)</a></li> 
                 </ul>
             </div>
 
             <div class="col-md-3 mb-4">
                 <h5 class="fw-bold">Infos & Aide</h5>
                 <ul class="list-unstyled">
-                    <li><a href="#" class="text text-decoration-none small">Mentions Légales</a></li>
+                    <li><a href="mentions-legales.php" class="text text-decoration-none small">Mentions Légales</a></li>
                     <li class="mt-3"><i class="bi bi-envelope-fill me-2"></i> contact@demenagement.com</li>
                     <li><i class="bi bi-telephone-fill me-2"></i> +33 6 35 93 76 50</li>
                 </ul>
